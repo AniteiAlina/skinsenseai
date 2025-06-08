@@ -4,76 +4,125 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>SkinSense AI</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
   <style>
-    body {
-      font-family: 'Segoe UI', sans-serif;
-      background-color: #fff5f7;
+    body, html {
+      margin: 0; padding: 0;
+      height: 100%;
+      font-family: Arial, sans-serif;
+      background: #fefefe;
       color: #333;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-start;
+      padding: 1rem;
+      box-sizing: border-box;
     }
     header {
       background-color: #f4a7b9;
       color: white;
-      padding: 2.5rem 1rem;
+      padding: 1rem 2rem;
+      border-radius: 8px;
       text-align: center;
-    }
-    .hero {
-      text-align: center;
-      padding: 3rem 1rem;
-    }
-    .hero img {
-      max-width: 100%;
-      border-radius: 10px;
-      margin-top: 1rem;
-    }
-    .section-title {
-      font-weight: bold;
-      margin-top: 2rem;
+      max-width: 800px;
+      width: 100%;
       margin-bottom: 1rem;
     }
-    .btn-custom {
-      background-color: #f4a7b9;
-      color: white;
-    }
-    .btn-custom:hover {
-      background-color: #e18ba3;
-    }
-    footer {
-      background-color: #f4a7b9;
-      color: white;
+    main {
+      max-width: 800px;
+      width: 100%;
       text-align: center;
-      padding: 1rem;
-      margin-top: 3rem;
+      margin-bottom: 1rem;
+    }
+    img {
+      max-width: 100%;
+      border-radius: 10px;
+      margin-bottom: 1rem;
+    }
+    section {
+      margin-bottom: 1.5rem;
+      text-align: left;
+    }
+    h1, h2 {
+      margin-top: 0;
+    }
+
+    /* Center chat container */
+    #chat-container {
+      width: 100%;
+      max-width: 500px;
+      height: 600px;
+      border: 2px solid #f4a7b9;
+      border-radius: 10px;
+      overflow: hidden;
+      margin-bottom: 2rem;
+      box-shadow: 0 4px 15px rgba(244, 167, 185, 0.3);
+      position: relative;
+    }
+
+    /* Form styles */
+    form {
+      max-width: 800px;
+      width: 100%;
+      background: #f9f9f9;
+      padding: 1.5em;
+      border-radius: 8px;
+      box-sizing: border-box;
+      margin-bottom: 2rem;
+    }
+    label {
+      display: block;
+      margin-bottom: 0.5em;
+      font-weight: bold;
+    }
+    input, textarea, button {
+      width: 100%;
+      padding: 0.8em;
+      margin-bottom: 1em;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      font-size: 1em;
+      box-sizing: border-box;
+    }
+    button {
+      background-color: #f4a7b9;
+      color: white;
+      cursor: pointer;
+      border: none;
+      transition: background-color 0.3s ease;
+    }
+    button:hover {
+      background-color: #e18ba3;
     }
   </style>
 </head>
 <body>
 
   <header>
-    <h1>SkinSense AI</h1>
+    <h1>Welcome to SkinSense AI</h1>
     <p>Your personal AI skincare assistant</p>
   </header>
 
-  <main class="container">
-    <section class="hero">
-      <h2 class="section-title">🧴 About SkinSense AI</h2>
+  <main>
+    <img src="https://via.placeholder.com/800x400.png?text=SkinCare+AI" alt="SkinSense AI Image" />
+    
+    <section>
+      <h2>About SkinSense AI</h2>
       <p>SkinSense AI is your smart skincare assistant — designed to give you personalized skincare guidance using the power of Artificial Intelligence. Whether you're dealing with acne, dryness, or just trying to build a better routine, our AI agent is here to help.</p>
-      <img src="https://images.unsplash.com/photo-1600181954323-7566f92da6f2?auto=format&fit=crop&w=800&q=80" alt="Skincare AI Demo" class="img-fluid">
     </section>
 
     <section>
-      <h2 class="section-title">🌟 Why use SkinSense AI?</h2>
+      <h2>Why use SkinSense AI?</h2>
       <ul>
-        <li>✅ <strong>Personalized Tips</strong><br>Based on your skin type, concerns, and environment.</li>
-        <li>🤖 <strong>AI-Powered Answers</strong><br>Instantly get skincare advice from a smart assistant.</li>
-        <li>💬 <strong>Real-Time Chat</strong><br>Ask questions about ingredients, routines, or products — anytime.</li>
-        <li>📍 <strong>No Signup Needed</strong><br>Just open the page and start chatting.</li>
+        <li>✅ Personalized Tips based on your skin type, concerns, and environment.</li>
+        <li>🤖 AI-Powered Answers instantly tailored for you.</li>
+        <li>💬 Real-Time Chat — ask questions anytime.</li>
+        <li>📍 No Signup Needed — just open and chat.</li>
       </ul>
-      <img src="https://images.unsplash.com/photo-1613046792747-e9d2c64b5b77?auto=format&fit=crop&w=800&q=80" alt="AI Chat Example" class="img-fluid rounded my-3">
     </section>
 
     <section>
-      <h2 class="section-title">💡 What can I ask?</h2>
+      <h2>What can I ask?</h2>
       <ul>
         <li>“What's a good routine for oily skin?”</li>
         <li>“Is hyaluronic acid good for sensitive skin?”</li>
@@ -81,34 +130,30 @@
         <li>“Can I mix retinol and vitamin C?”</li>
       </ul>
     </section>
-
-    <section>
-      <h2 class="section-title">🗣️ Feedback? Ideas?</h2>
-      <p>We’d love to hear from you! Use the form below to share your thoughts, questions, or suggestions. Your input helps us improve and grow.</p>
-      <form action="https://formspree.io/f/xovwjbol" method="POST">
-        <div class="mb-3">
-          <label for="email" class="form-label">Your Email:</label>
-          <input type="email" name="email" class="form-control" required>
-        </div>
-        <div class="mb-3">
-          <label for="message" class="form-label">Your Message:</label>
-          <textarea name="message" rows="5" class="form-control" required></textarea>
-        </div>
-        <button type="submit" class="btn btn-custom">Send</button>
-      </form>
-    </section>
   </main>
 
-  <!-- LiveChatAI widget -->
-  <script
-    src="https://app.livechatai.com/embed.js"
-    data-id="cmbo2jxow0001js0b4liavbqe"
-    async defer>
-  </script>
+  <div id="chat-container">
+    <!-- LiveChatAI widget -->
+    <script
+      src="https://app.livechatai.com/embed.js"
+      data-id="cmbo2jxow0001js0b4liavbqe"
+      async
+      defer>
+    </script>
+  </div>
 
-  <footer>
-    <p>© 2025 SkinSense AI. Built with ❤️ and AI.</p>
-  </footer>
+  <form action="https://formspree.io/f/xovwjbol" method="POST">
+    <h2>Feedback? Ideas?</h2>
+    <p>We’d love to hear from you! Use the form below to share your thoughts, questions, or suggestions. Your input helps us improve and grow.</p>
+    
+    <label for="email">Your email:</label>
+    <input type="email" id="email" name="email" required />
+
+    <label for="message">Your message:</label>
+    <textarea id="message" name="message" rows="5" required></textarea>
+
+    <button type="submit">Send</button>
+  </form>
 
 </body>
 </html>
