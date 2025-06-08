@@ -14,22 +14,22 @@
     header {
       background-color: #f4a7b9;
       color: white;
-      padding: 2rem 1rem;
+      padding: 2.5rem 1rem;
       text-align: center;
     }
     .hero {
       text-align: center;
       padding: 3rem 1rem;
     }
-    .hero h1 {
-      font-size: 2.8rem;
+    .hero img {
+      max-width: 100%;
+      border-radius: 10px;
+      margin-top: 1rem;
+    }
+    .section-title {
+      font-weight: bold;
+      margin-top: 2rem;
       margin-bottom: 1rem;
-    }
-    .hero p {
-      font-size: 1.2rem;
-    }
-    section {
-      padding: 2rem 1rem;
     }
     .btn-custom {
       background-color: #f4a7b9;
@@ -43,7 +43,7 @@
       color: white;
       text-align: center;
       padding: 1rem;
-      margin-top: 2rem;
+      margin-top: 3rem;
     }
   </style>
 </head>
@@ -56,18 +56,35 @@
 
   <main class="container">
     <section class="hero">
-      <h2>Discover Your Best Skin</h2>
-      <p>Chat with our AI agent to get skincare advice tailored to your skin type, environment, and lifestyle. Whether you live in a humid climate or have sensitive skin, SkinSense AI is here to help.</p>
-      <img src="https://via.placeholder.com/800x400.png?text=SkinSense+AI+Assistant" class="img-fluid rounded mt-3" alt="SkinSense AI Assistant">
+      <h2 class="section-title">🧴 About SkinSense AI</h2>
+      <p>SkinSense AI is your smart skincare assistant — designed to give you personalized skincare guidance using the power of Artificial Intelligence. Whether you're dealing with acne, dryness, or just trying to build a better routine, our AI agent is here to help.</p>
+      <img src="https://images.unsplash.com/photo-1600181954323-7566f92da6f2?auto=format&fit=crop&w=800&q=80" alt="Skincare AI Demo" class="img-fluid">
     </section>
 
     <section>
-      <h3>Talk to SkinSense AI</h3>
-      <p>Ask anything from “What’s the best routine for oily skin?” to “How should I care for my skin in winter?”</p>
+      <h2 class="section-title">🌟 Why use SkinSense AI?</h2>
+      <ul>
+        <li>✅ <strong>Personalized Tips</strong><br>Based on your skin type, concerns, and environment.</li>
+        <li>🤖 <strong>AI-Powered Answers</strong><br>Instantly get skincare advice from a smart assistant.</li>
+        <li>💬 <strong>Real-Time Chat</strong><br>Ask questions about ingredients, routines, or products — anytime.</li>
+        <li>📍 <strong>No Signup Needed</strong><br>Just open the page and start chatting.</li>
+      </ul>
+      <img src="https://images.unsplash.com/photo-1613046792747-e9d2c64b5b77?auto=format&fit=crop&w=800&q=80" alt="AI Chat Example" class="img-fluid rounded my-3">
     </section>
 
     <section>
-      <h3>Feedback & Suggestions</h3>
+      <h2 class="section-title">💡 What can I ask?</h2>
+      <ul>
+        <li>“What's a good routine for oily skin?”</li>
+        <li>“Is hyaluronic acid good for sensitive skin?”</li>
+        <li>“How often should I exfoliate?”</li>
+        <li>“Can I mix retinol and vitamin C?”</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2 class="section-title">🗣️ Feedback? Ideas?</h2>
+      <p>We’d love to hear from you! Use the form below to share your thoughts, questions, or suggestions. Your input helps us improve and grow.</p>
       <form action="https://formspree.io/f/xovwjbol" method="POST">
         <div class="mb-3">
           <label for="email" class="form-label">Your Email:</label>
@@ -82,7 +99,7 @@
     </section>
   </main>
 
-  <!-- Chatbot widget -->
+  <!-- LiveChatAI widget -->
   <script
     src="https://app.livechatai.com/embed.js"
     data-id="cmbo2jxow0001js0b4liavbqe"
