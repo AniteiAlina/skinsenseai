@@ -1,159 +1,122 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>SkinSense AI</title>
-  <style>
-    body, html {
-      margin: 0; padding: 0;
-      height: 100%;
-      font-family: Arial, sans-serif;
-      background: #fefefe;
-      color: #333;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: flex-start;
-      padding: 1rem;
-      box-sizing: border-box;
-    }
-    header {
-      background-color: #f4a7b9;
-      color: white;
-      padding: 1rem 2rem;
-      border-radius: 8px;
-      text-align: center;
-      max-width: 800px;
-      width: 100%;
-      margin-bottom: 1rem;
-    }
-    main {
-      max-width: 800px;
-      width: 100%;
-      text-align: center;
-      margin-bottom: 1rem;
-    }
-    img {
-      max-width: 100%;
-      border-radius: 10px;
-      margin-bottom: 1rem;
-    }
-    section {
-      margin-bottom: 1.5rem;
-      text-align: left;
-    }
-    h1, h2 {
-      margin-top: 0;
-    }
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>SkinSense AI</title>
+<style>
+  html, body {
+    margin: 0; padding: 0; height: 100%;
+    font-family: Arial, sans-serif;
+    background: #fefefe;
+    color: #333;
+  }
 
-    /* Center chat container */
-    #chat-container {
-      width: 100%;
-      max-width: 500px;
-      height: 600px;
-      border: 2px solid #f4a7b9;
-      border-radius: 10px;
-      overflow: hidden;
-      margin-bottom: 2rem;
-      box-shadow: 0 4px 15px rgba(244, 167, 185, 0.3);
-      position: relative;
-    }
+  body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    box-sizing: border-box;
+    padding: 1rem;
+  }
 
-    /* Form styles */
-    form {
-      max-width: 800px;
-      width: 100%;
-      background: #f9f9f9;
-      padding: 1.5em;
-      border-radius: 8px;
-      box-sizing: border-box;
-      margin-bottom: 2rem;
-    }
-    label {
-      display: block;
-      margin-bottom: 0.5em;
-      font-weight: bold;
-    }
-    input, textarea, button {
-      width: 100%;
-      padding: 0.8em;
-      margin-bottom: 1em;
-      border: 1px solid #ccc;
-      border-radius: 6px;
-      font-size: 1em;
-      box-sizing: border-box;
-    }
-    button {
-      background-color: #f4a7b9;
-      color: white;
-      cursor: pointer;
-      border: none;
-      transition: background-color 0.3s ease;
-    }
-    button:hover {
-      background-color: #e18ba3;
-    }
-  </style>
+  header {
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+
+  #chat-container {
+    width: 90vw;
+    max-width: 600px;
+    height: 80vh;
+    border: 3px solid #f4a7b9;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(244, 167, 185, 0.4);
+    position: relative;
+  }
+
+  main {
+    max-width: 600px;
+    width: 90vw;
+    margin-top: 1rem;
+    text-align: center;
+  }
+
+  form {
+    max-width: 600px;
+    width: 90vw;
+    margin-top: 1.5rem;
+    background: #f9f9f9;
+    padding: 1rem;
+    border-radius: 10px;
+    box-sizing: border-box;
+  }
+
+  label {
+    display: block;
+    font-weight: bold;
+    margin-top: 1rem;
+  }
+
+  input, textarea, button {
+    width: 100%;
+    margin-top: 0.5rem;
+    padding: 0.7rem;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 1rem;
+    box-sizing: border-box;
+  }
+
+  button {
+    margin-top: 1.5rem;
+    background-color: #f4a7b9;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+
+  button:hover {
+    background-color: #e18ba3;
+  }
+</style>
 </head>
 <body>
 
-  <header>
-    <h1>Welcome to SkinSense AI</h1>
-    <p>Your personal AI skincare assistant</p>
-  </header>
+<header>
+  <h1>Welcome to SkinSense AI</h1>
+  <p>Your personal AI skincare assistant</p>
+</header>
 
-  <main>
-    <img src="https://via.placeholder.com/800x400.png?text=SkinCare+AI" alt="SkinSense AI Image" />
-    
-    <section>
-      <h2>About SkinSense AI</h2>
-      <p>SkinSense AI is your smart skincare assistant — designed to give you personalized skincare guidance using the power of Artificial Intelligence. Whether you're dealing with acne, dryness, or just trying to build a better routine, our AI agent is here to help.</p>
-    </section>
+<div id="chat-container">
+  <!-- Chat widget -->
+  <script
+    src="https://app.livechatai.com/embed.js"
+    data-id="cmbo2jxow0001js0b4liavbqe"
+    async defer>
+  </script>
+</div>
 
-    <section>
-      <h2>Why use SkinSense AI?</h2>
-      <ul>
-        <li>✅ Personalized Tips based on your skin type, concerns, and environment.</li>
-        <li>🤖 AI-Powered Answers instantly tailored for you.</li>
-        <li>💬 Real-Time Chat — ask questions anytime.</li>
-        <li>📍 No Signup Needed — just open and chat.</li>
-      </ul>
-    </section>
+<main>
+  <h2>About SkinSense AI</h2>
+  <p>SkinSense AI is your smart skincare assistant — designed to give you personalized skincare guidance using AI. Whether you're dealing with acne, dryness, or building a routine, our AI agent is here to help.</p>
+</main>
 
-    <section>
-      <h2>What can I ask?</h2>
-      <ul>
-        <li>“What's a good routine for oily skin?”</li>
-        <li>“Is hyaluronic acid good for sensitive skin?”</li>
-        <li>“How often should I exfoliate?”</li>
-        <li>“Can I mix retinol and vitamin C?”</li>
-      </ul>
-    </section>
-  </main>
+<form action="https://formspree.io/f/xovwjbol" method="POST">
+  <h2>Feedback? Ideas?</h2>
+  <p>We’d love to hear from you! Use the form below to share your thoughts, questions, or suggestions.</p>
 
-  <div id="chat-container">
-    <!-- LiveChatAI widget -->
-    <script
-      src="https://app.livechatai.com/embed.js"
-      data-id="cmbo2jxow0001js0b4liavbqe"
-      async
-      defer>
-    </script>
-  </div>
+  <label for="email">Your email:</label>
+  <input type="email" id="email" name="email" required />
 
-  <form action="https://formspree.io/f/xovwjbol" method="POST">
-    <h2>Feedback? Ideas?</h2>
-    <p>We’d love to hear from you! Use the form below to share your thoughts, questions, or suggestions. Your input helps us improve and grow.</p>
-    
-    <label for="email">Your email:</label>
-    <input type="email" id="email" name="email" required />
+  <label for="message">Your message:</label>
+  <textarea id="message" name="message" rows="5" required></textarea>
 
-    <label for="message">Your message:</label>
-    <textarea id="message" name="message" rows="5" required></textarea>
-
-    <button type="submit">Send</button>
-  </form>
+  <button type="submit">Send</button>
+</form>
 
 </body>
 </html>
