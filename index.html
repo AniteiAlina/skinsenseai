@@ -14,13 +14,13 @@
 
     header {
       text-align: center;
-      background-color: #ffffffcc;
+      background-color: #ffffffc5;
       padding: 2rem 1rem;
       box-shadow: 0 2px 10px rgba(0,0,0,0.05);
     }
 
     header img {
-      max-width: 140px;
+      max-width: 160px;
       margin-bottom: 1rem;
     }
 
@@ -35,9 +35,9 @@
     }
 
     main {
-      max-width: 1000px;
-      margin: auto;
       padding: 2rem;
+      max-width: 960px;
+      margin: auto;
     }
 
     section {
@@ -52,10 +52,11 @@
     .features {
       display: grid;
       grid-template-columns: 1fr 1fr;
-      gap: 1rem;
-      background: #f6fefc;
+      gap: 1.5rem;
+      background: #f9fdfd;
       padding: 1.5rem;
-      border-radius: 12px;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
     }
 
     .features p {
@@ -63,14 +64,13 @@
     }
 
     ul {
-      margin-top: 0;
-      padding-left: 1rem;
+      padding-left: 1.2rem;
     }
 
     form {
-      background: #ffffff;
+      background: #fff;
       padding: 1.5rem;
-      border-radius: 12px;
+      border-radius: 10px;
       box-shadow: 0 2px 8px rgba(0,0,0,0.1);
     }
 
@@ -85,7 +85,7 @@
       padding: 0.8rem;
       margin-bottom: 1.2rem;
       border: 1px solid #ccc;
-      border-radius: 8px;
+      border-radius: 6px;
     }
 
     button {
@@ -102,6 +102,13 @@
       background-color: #499d96;
     }
 
+    footer {
+      text-align: center;
+      padding: 2rem 1rem;
+      font-size: 0.9rem;
+      color: #777;
+    }
+
     .socials {
       text-align: center;
       margin-top: 2rem;
@@ -109,27 +116,23 @@
 
     .socials a {
       margin: 0 10px;
-      text-decoration: none;
       color: #005555;
+      text-decoration: none;
       font-weight: bold;
     }
 
-    footer {
+    .chat-container {
+      background: #f6fefc;
+      padding: 1.5rem;
+      border-radius: 12px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+    }
+
+    .chat-container h2 {
       text-align: center;
-      padding: 2rem 1rem;
-      color: #666;
-      font-size: 0.9rem;
-      background: #f1f1f1;
     }
 
-    iframe {
-      width: 100%;
-      height: 100vh;
-      border: none;
-      margin-bottom: 2rem;
-    }
-
-    @media(max-width: 768px) {
+    @media (max-width: 768px) {
       .features {
         grid-template-columns: 1fr;
       }
@@ -138,12 +141,6 @@
 </head>
 <body>
 
-  <!-- Full Page AI Chat -->
-  <iframe
-    src="https://app.livechatai.com/aibot-iframe/cmbo2jxow0001js0b4liavbqe"
-    allow="microphone">
-  </iframe>
-
   <header>
     <img src="skinsense%20ai%20logo.jpg" alt="SkinSense AI Logo" />
     <h1>SkinSense AI</h1>
@@ -151,6 +148,18 @@
   </header>
 
   <main>
+
+    <!-- Chat section -->
+    <section class="chat-container">
+      <h2>💬 Chat with SkinSense AI</h2>
+      <iframe
+        src="https://app.livechatai.com/aibot-iframe/cmbo2jxow0001js0b4liavbqe"
+        allow="microphone"
+        style="width: 100%; height: 680px; border: none; border-radius: 8px;">
+      </iframe>
+    </section>
+
+    <!-- About -->
     <section>
       <h2>About SkinSense AI</h2>
       <p>
@@ -160,6 +169,7 @@
       </p>
     </section>
 
+    <!-- Features & Questions in 2 columns -->
     <section class="features">
       <div>
         <h2>🌟 Why Use SkinSense AI?</h2>
@@ -179,6 +189,7 @@
       </div>
     </section>
 
+    <!-- Feedback -->
     <section>
       <h2>🗣️ Share Feedback</h2>
       <p>We’d love to hear from you! Use the form below to share your thoughts, questions, or suggestions. Your input helps us improve and grow.</p>
@@ -193,15 +204,16 @@
       </form>
     </section>
 
+    <!-- Social links -->
     <div class="socials">
-      <a href="https://www.instagram.com/yourprofile" target="_blank">Instagram</a>
-      <a href="https://www.facebook.com/yourprofile" target="_blank">Facebook</a>
-      <a href="https://www.linkedin.com/in/yourprofile" target="_blank">LinkedIn</a>
+      <a href="https://instagram.com/" target="_blank">Instagram</a>
+      <a href="https://facebook.com/" target="_blank">Facebook</a>
+      <a href="https://linkedin.com/" target="_blank">LinkedIn</a>
     </div>
   </main>
 
   <footer>
-    © 2025 SkinSense AI. Gentle support for every skin journey.
+    © 2025 SkinSense AI. Smart skincare for every skin.
   </footer>
 
 </body>
