@@ -14,7 +14,7 @@
 
     header {
       text-align: center;
-      background-color: #ffffffc5;
+      background-color: #d9f5f0;
       padding: 2rem 1rem;
       box-shadow: 0 2px 10px rgba(0,0,0,0.05);
     }
@@ -50,8 +50,8 @@
     }
 
     .features {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
+      display: flex;
+      flex-wrap: wrap;
       gap: 1.5rem;
       background: #f9fdfd;
       padding: 1.5rem;
@@ -59,7 +59,33 @@
       box-shadow: 0 2px 8px rgba(0,0,0,0.05);
     }
 
-    .features p {
+    .feature-box {
+      flex: 1 1 45%;
+      background: white;
+      padding: 1rem;
+      border-radius: 10px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      animation: fadeInUp 1s ease;
+    }
+
+    .feature-box:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+
+    @keyframes fadeInUp {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .feature-box p, .feature-box ul {
       margin: 0.5rem 0;
     }
 
@@ -134,7 +160,11 @@
 
     @media (max-width: 768px) {
       .features {
-        grid-template-columns: 1fr;
+        flex-direction: column;
+      }
+
+      .feature-box {
+        flex: 1 1 100%;
       }
     }
   </style>
@@ -142,7 +172,7 @@
 <body>
 
   <header>
-    <img src="skinsense%20ai%20logo.jpg" alt="SkinSense AI Logo" />
+    <img src="/mnt/data/skinsense_ai_logo-removebg-preview.png" alt="SkinSense AI Logo" />
     <h1>SkinSense AI</h1>
     <p>Your smart AI skincare assistant</p>
   </header>
@@ -169,16 +199,16 @@
       </p>
     </section>
 
-    <!-- Features & Questions in 2 columns -->
+    <!-- Features with animations in two boxes -->
     <section class="features">
-      <div>
+      <div class="feature-box">
         <h2>🌟 Why Use SkinSense AI?</h2>
         <p>✅ Personalized Tips — Based on your skin type, concerns, and environment.</p>
         <p>🤖 AI-Powered Answers — Instantly get skincare advice from a smart assistant.</p>
         <p>💬 Real-Time Chat — Ask questions about ingredients, routines, or products — anytime.</p>
         <p>📍 No Signup Needed — Open the page and start chatting.</p>
       </div>
-      <div>
+      <div class="feature-box">
         <h2>💡 What Can I Ask?</h2>
         <ul>
           <li>“What's a good routine for oily skin?”</li>
