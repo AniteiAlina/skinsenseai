@@ -5,107 +5,63 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>SkinSense AI</title>
   <style>
-    body {
+    html, body {
       margin: 0;
+      padding: 0;
+      height: 100%;
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background: linear-gradient(to bottom right, #e0f4f1, #fefefe);
-      color: #333;
+      background-color: #f0f7f7;
     }
+
     header {
+      background-color: #ffffffdd;
+      padding: 1rem 2rem;
       text-align: center;
-      background-color: #ffffffc5;
-      padding: 2rem 1rem;
-      box-shadow: 0 2px 10px rgba(0,0,0,0.05);
-    }
-    header img {
-      max-width: 160px;
-      margin-bottom: 1rem;
-    }
-    header h1 {
-      font-size: 2rem;
-      margin: 0;
-    }
-    header p {
-      color: #555;
-      font-size: 1.1rem;
-    }
-    main {
-      padding: 2rem;
-      max-width: 900px;
-      margin: auto;
-    }
-    section {
-      margin-bottom: 3rem;
-    }
-    h2 {
-      color: #005555;
-      margin-top: 0;
-    }
-    .two-columns {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 2rem;
-      margin-bottom: 2rem;
-    }
-    .column {
-      flex: 1;
-      min-width: 280px;
-      background: #e9f8f7;
-      padding: 1.5rem;
-      border-radius: 12px;
-      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
-    }
-    .column h2 {
-      color: #005555;
-    }
-    .column ul, .column li {
-      list-style: none;
-      padding-left: 0;
-      margin: 0 0 0.8rem 0;
-    }
-    form {
-      background: #fff;
-      padding: 1.5rem;
-      border-radius: 10px;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-    }
-    label {
-      display: block;
-      margin-bottom: 0.5rem;
-      font-weight: bold;
-    }
-    input, textarea {
+      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+      position: fixed;
       width: 100%;
-      padding: 0.8rem;
-      margin-bottom: 1.2rem;
-      border: 1px solid #ccc;
-      border-radius: 6px;
+      z-index: 1;
     }
-    button {
-      background-color: #5cb8b2;
-      color: white;
-      border: none;
-      padding: 0.8rem 1.5rem;
-      border-radius: 6px;
-      font-size: 1rem;
-      cursor: pointer;
-    }
-    button:hover {
-      background-color: #499d96;
-    }
-    footer {
-      text-align: center;
-      padding: 2rem 1rem;
-      background: #d8f1ee;
-      margin-top: 3rem;
-    }
-    .social-icons a {
-      margin: 0 0.5rem;
-      text-decoration: none;
+
+    header h1 {
+      margin: 0;
+      font-size: 1.8rem;
       color: #005555;
+    }
+
+    main {
+      margin-top: 100px;
+      height: calc(100% - 160px);
+    }
+
+    #chatbot-container {
+      width: 100%;
+      height: 100%;
+    }
+
+    footer {
+      background-color: #ffffffcc;
+      text-align: center;
+      padding: 1rem;
+      font-size: 0.9rem;
+      color: #444;
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+    }
+
+    .socials {
+      margin-top: 0.5rem;
+    }
+
+    .socials a {
+      margin: 0 10px;
+      color: #005555;
+      text-decoration: none;
       font-weight: bold;
     }
-    .social-icons a:hover {
+
+    .socials a:hover {
       text-decoration: underline;
     }
   </style>
@@ -113,67 +69,28 @@
 <body>
 
   <header>
-    <img src="skinsense%20ai%20logo.jpg" alt="SkinSense AI Logo" />
-    <h1>SkinSense AI</h1>
-    <p>Your smart AI skincare assistant</p>
+    <h1>🌿 SkinSense AI — Your Smart Skincare Assistant</h1>
   </header>
 
   <main>
-    <section>
-      <h2>About SkinSense AI</h2>
-      <p>SkinSense AI is your smart skincare assistant — designed to give you personalized skincare guidance using the power of Artificial Intelligence. Whether you're dealing with acne, dryness, or just trying to build a better routine, our AI agent is here to help.</p>
-      <p>📷 <strong>Upload & Analyze with SkinSense AI</strong><br>
-        If you upload an image showing a skin concern—like dryness, redness, or acne—SkinSense AI can visually assess your skin’s condition using AI-powered analysis. Based on these visual insights, it suggests personalized skincare routines, products, and treatments tailored specifically to your needs. This model emphasizes the importance of consulting a real dermatologist for serious conditions and does not provide a diagnosis, but instead offers general advice.</p>
-    </section>
-
-    <div class="two-columns">
-      <div class="column">
-        <h2>🌟 Why Use SkinSense AI?</h2>
-        <ul>
-          <li>✅ Personalized Tips — Based on your skin type, concerns, and environment.</li>
-          <li>🤖 AI-Powered Answers — Instantly get skincare advice from a smart assistant.</li>
-          <li>💬 Real-Time Chat — Ask questions about ingredients, routines, or products — anytime.</li>
-          <li>📍 No Signup Needed — Open the page and start chatting.</li>
-        </ul>
-      </div>
-
-      <div class="column">
-        <h2>💡 What Can I Ask?</h2>
-        <ul>
-          <li>“What's a good routine for oily skin?”</li>
-          <li>“Is hyaluronic acid good for sensitive skin?”</li>
-          <li>“How often should I exfoliate?”</li>
-          <li>“Can I mix retinol and vitamin C?”</li>
-        </ul>
-      </div>
-    </div>
-
-    <section>
-      <h2>🗣️ Share Feedback</h2>
-      <p>We’d love to hear from you! Use the form below to share your thoughts, questions, or suggestions. Your input helps us improve and grow.</p>
-      <form action="https://formspree.io/f/xovwjbol" method="POST">
-        <label for="email">Your Email</label>
-        <input type="email" name="email" required />
-
-        <label for="message">Your Message</label>
-        <textarea name="message" rows="5" required></textarea>
-
-        <button type="submit">Send Feedback</button>
-      </form>
-    </section>
+    <div id="chatbot-container"></div>
   </main>
 
   <footer>
-    <p>© 2025 SkinSense AI. Personalized support for your skin journey.</p>
-    <div class="social-icons">
-      <a href="https://www.instagram.com/" target="_blank">Instagram</a> |
-      <a href="https://www.facebook.com/" target="_blank">Facebook</a> |
-      <a href="https://www.linkedin.com/" target="_blank">LinkedIn</a>
+    © 2025 SkinSense AI. Smart skincare support, powered by AI.
+    <div class="socials">
+      <a href="https://instagram.com/yourusername" target="_blank">Instagram</a>
+      <a href="https://facebook.com/yourusername" target="_blank">Facebook</a>
+      <a href="https://linkedin.com/in/yourusername" target="_blank">LinkedIn</a>
     </div>
   </footer>
 
-  <!-- LiveChatAI Chatbot Script -->
- https://app.livechatai.com/ai-bot/cmbo2jxow0001js0b4liavbqe
+  <!-- Chatbot Script -->
+  <script
+    src="https://app.livechatai.com/embed.js"
+    data-id="cmbo2jxow0001js0b4liavbqe"
+    async defer>
+  </script>
 
 </body>
 </html>
