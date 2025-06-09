@@ -135,6 +135,52 @@
       font-size: 1.4rem;
     }
 
+    .testimonial-carousel {
+      text-align: center;
+      background-color: #f6fefc;
+      padding: 3rem 1rem;
+      border-radius: 12px;
+      box-shadow: 0 2px 12px rgba(0, 0, 0, 0.05);
+    }
+
+    .carousel {
+      position: relative;
+      height: 150px;
+      overflow: hidden;
+      max-width: 700px;
+      margin: auto;
+    }
+
+    .carousel-item {
+      position: absolute;
+      width: 100%;
+      opacity: 0;
+      animation: carouselFade 16s infinite;
+      padding: 0 1rem;
+    }
+
+    .carousel-item:nth-child(1) { animation-delay: 0s; }
+    .carousel-item:nth-child(2) { animation-delay: 4s; }
+    .carousel-item:nth-child(3) { animation-delay: 8s; }
+    .carousel-item:nth-child(4) { animation-delay: 12s; }
+
+    @keyframes carouselFade {
+      0%, 20% { opacity: 1; }
+      25%, 100% { opacity: 0; }
+    }
+
+    .carousel-item p {
+      font-style: italic;
+      font-size: 1rem;
+    }
+
+    .carousel-item span {
+      display: block;
+      margin-top: 1rem;
+      font-weight: bold;
+      color: #333;
+    }
+
     @media (max-width: 768px) {
       .features-columns {
         flex-direction: column;
@@ -203,29 +249,29 @@
         </ul>
       </div>
     </section>
-    <!-- Testimonial Carousel -->
-<section class="testimonial-carousel">
-  <h2>What Our Users Say</h2>
-  <div class="carousel">
-    <div class="carousel-item">
-      <p>“No signup, no stress — just smart skincare tips that actually make sense.”</p>
-      <span>— Mia, 22, New York</span>
-    </div>
-    <div class="carousel-item">
-      <p>“Quick, clear answers — exactly what I needed to fix my routine.”</p>
-      <span>— Sarah, 29, Sydney</span>
-    </div>
-    <div class="carousel-item">
-      <p>“The chat was quick and easy—no complicated jargon, just helpful advice.”</p>
-      <span>— Lina, 31, Paris</span>
-    </div>
-    <div class="carousel-item">
-      <p>“I asked simple questions about my oily T-zone and dry cheeks, and the AI suggested a routine that finally balanced my skin. It’s been a game-changer for me!”</p>
-      <span>— Olivia, 40, Los Angeles</span>
-    </div>
-  </div>
-</section>
 
+    <!-- Testimonial Carousel -->
+    <section class="testimonial-carousel">
+      <h2>What Our Users Say</h2>
+      <div class="carousel">
+        <div class="carousel-item">
+          <p>“No signup, no stress — just smart skincare tips that actually make sense.”</p>
+          <span>— Mia, 22, New York</span>
+        </div>
+        <div class="carousel-item">
+          <p>“Quick, clear answers — exactly what I needed to fix my routine.”</p>
+          <span>— Sarah, 29, Sydney</span>
+        </div>
+        <div class="carousel-item">
+          <p>“The chat was quick and easy—no complicated jargon, just helpful advice.”</p>
+          <span>— Lina, 31, Paris</span>
+        </div>
+        <div class="carousel-item">
+          <p>“I asked simple questions about my oily T-zone and dry cheeks, and the AI suggested a routine that finally balanced my skin. It’s been a game-changer for me!”</p>
+          <span>— Olivia, 40, Los Angeles</span>
+        </div>
+      </div>
+    </section>
 
     <!-- Feedback -->
     <section>
